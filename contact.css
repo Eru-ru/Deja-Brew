@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Luckiest Guy", "Cabin Sketch" Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes fade-out {
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes scroll {
+    
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes animateWaves {
+    
+    0% {
+      background-position-x: 1000px;
+    }
+    
+    100% {
+      background-positon-x: 0px;
+    }
+}
+  
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes change-col {
+    from {
+        background: transparent;
+    }
+
+    to {
+        background: #000;
+    }
+}
+
+body {
+    min-width: 100%;
+    min-height: 100vh;
+    background-image: url(mainbg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background: #fff;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    color: #fff;
+    font-family: "Luckiest Guy", sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    -webkit-text-stroke: 2px #000;
+}
+
+.navigation a {
+    font-family: "Jost", serif;
+    text-decoration: none;
+    vertical-align: baseline;
+    color: #000;
+    font-size: 18px;
+    margin: 0px 40px 0px 0px;
+    position: relative;
+}
+
+.navigation a::before  {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    border-radius: 10px;
+    transition: .3s;
+    text-align: center;
+}
+
+.navigation a:hover::before {
+    width: 100%;
+}
+
+.shop a {
+    text-decoration: none;
+    vertical-align: baseline;
+    color: #000;
+    font-size: 18px;
+    margin: 0px 40px 0px 0px;
+    position: relative;
+}
+
+.shop a::before {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    border-radius: 10px;
+    transition: .3s;
+    text-align: center;
+}
+
+.shop a:hover::before {
+    width: 100%;
+}
+
+.container {
+    min-width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    background: #000000AA;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container .content {
+    width: fit-content;
+    padding: 0px 20px 0px 20px;
+}
+
+.container .content .title {
+    font-family: "Luckiest Guy", sans-serif;
+    letter-spacing: 5px;
+    font-size: 5rem;
+    max-width: fit-content;
+    color: #fff;
+    -webkit-text-stroke: 2px #000;
+}
+
+.container .content .desc {
+    font-family: "Jost", sans-serif;
+    background: #545454;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 90%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 10px 0px;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+
+.container .content .btn-1 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: "Jost";
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container .content .btn-1:hover {
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 5px 5px 0px #fff;
+}
+
+.container .content .btn-1:active {
+    background: #6e6e6e;
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+.container-services {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  text-align: center;
+  padding: 30px;
+}
+
+.container-services h1 {
+  font-family: "Luckiest Guy", serif;
+  color: #fff;
+  -webkit-text-stroke: #000 2px;
+  font-size: 60px;
+}
+
+.form-container {
+  background: #a8895d;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  padding: 40px;
+  border-radius: 5px;
+  animation: scroll linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 50%;
+}
+
+.form-container .form1 {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.form-container .form1 .input {
+  border: none;
+  font-size: 16px;
+  font-family: "Jost", serif;
+  padding-left: 10px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 0px #000;
+  height: 50px;
+  width: 450px;
+}
+
+.form-container .form1 .input::placeholder {
+  font-size: 16px;
+  font-family: "Jost", serif;
+}
+
+.form-container .form2 .input1 {
+  border: none;
+  font-size: 16px;
+  font-family: "Jost", serif;
+  padding: 10px;
+  margin: 20px 0px 20px 0px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 0px #000;
+  height: 230px;
+  width: 450px;
+  resize: none;
+}
+
+.form-container .form2 .input1::placeholder {
+  display: flex;
+  align-items: flex-start;
+  font-size: 16px;
+}
+
+.button-holder {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container-services .form-container .form2 .click {
+  border-radius: 5px;
+  box-shadow: 5px 5px 0px #000;
+  padding: 10px 20px;
+  font-family: "Jost", serif;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.click:hover {
+  background: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: 5px 5px 0px #fff;
+}
+
+.click:active {
+  background: #6e6e6e;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    background: #a8895d;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-icon, .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item, .menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+  filter: sepia(50%) hue-rotate(180deg);
+}
+
+.wave#wave1 {
+  z-index: 3;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+.wave#wave2 {
+  z-index: 2;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 3;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 2;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
