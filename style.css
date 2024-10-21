@@ -350,13 +350,15 @@ nav {
 }
 
 .pastry-container .pastry .pastry-img {
+    margin: 0px 5%;
     height: 400px;
     border-radius: 10px;
     box-shadow: 10px 10px 0px #000;
 }
 
 .pastry-container .pastry .pastry-content {
-    width: 45%;
+    width: 75%;
+    padding: 0px 5%;
 }
 
 .pastry-container .pastry .pastry-content .mini-title {
@@ -583,13 +585,13 @@ nav {
     animation-range: entry 0 cover 30%;
 }
 
-.container1 .image-bg {
+.bcontainer .image-bg {
     position: relative;
     overflow: hidden;
     border-radius: 5px;
 }
 
-.container1 .image-bg img {
+.bcontainer .image-bg img {
     width: 300px;
     height: 400px;
     object-fit: cover;
@@ -597,11 +599,11 @@ nav {
     transition: .7s;
 }
 
-.container1 .image-bg:hover img {
+.bcontainer .image-bg:hover img {
     transform: scale(1.1);
 }
 
-.container1 .image-bg::before {
+.bcontainer .image-bg::before {
     content: "";
     position: absolute;
     top: 0;
@@ -611,13 +613,13 @@ nav {
     z-index: 1;
 }
 
-.container1 .product-name {
+.bcontainer .product-name {
     position: absolute;
     bottom: 5%;
     left: 5%;
 }
 
-.container1 .product-name p {
+.bcontainer .product-name p {
     position: relative;
     font-size: 24px;
     font-family: "Jost", serif;
@@ -626,13 +628,13 @@ nav {
     z-index: 2;
 }
 
-.container1 .best-info {
+.bcontainer .best-info {
     position: absolute;
     bottom: 10%;
     right: 5%;
 }
 
-.container1 .best-info a {
+.bcontainer .best-info a {
     position: relative;
     color: #000;
     background: #fff;
@@ -644,239 +646,14 @@ nav {
     transition: all 0.3s ease;
 }
 
-.container1 .best-info a:hover {
+.bcontainer .best-info a:hover {
     background: #a8895d;
     color: #51422c;
     border: 2px solid #fff;
     box-shadow: 5px 5px 0px #fff;
 }
 
-.container1 .best-info a:active {
-    background: #51422c;
-    color: #a8895d;
-    box-shadow: none;
-    transform: translateY(4px);
-}
-
-.container2 .image-bg {
-    position: relative;
-    overflow: hidden;
-    border-radius: 5px;
-}
-
-.container2 .image-bg img {
-    width: 300px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 5px;
-    transition: .7s;
-}
-
-.container2 .image-bg:hover img {
-    transform: scale(1.1);
-}
-
-.container2 .image-bg::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #604e3650;
-    z-index: 1;
-}
-
-.container2 .product-name {
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-}
-
-.container2 .product-name p {
-    position: relative;
-    font-size: 24px;
-    font-family: "Jost", serif;
-    font-weight: 500;
-    color: #fff;
-    z-index: 2;
-}
-
-.container2 .best-info {
-    position: absolute;
-    bottom: 10%;
-    right: 5%;
-}
-
-.container2 .best-info a {
-    position: relative;
-    color: #000;
-    background: #fff;
-    padding: 15px;
-    border: 2px solid #000;
-    border-radius: 250px;
-    box-shadow: 5px 5px 0px #000;
-    z-index: 3;
-    transition: all 0.3s ease;
-}
-
-.container2 .best-info a:hover {
-    background: #a8895d;
-    color: #51422c;
-    border: 2px solid #fff;
-    box-shadow: 5px 5px 0px #fff;
-}
-
-.container2 .best-info a:active {
-    background: #51422c;
-    color: #a8895d;
-    box-shadow: none;
-    transform: translateY(4px);
-}
-
-.container3 .image-bg {
-    position: relative;
-    overflow: hidden;
-    border-radius: 5px;
-}
-
-.container3 .image-bg img {
-    width: 300px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 5px;
-    transition: .7s;
-}
-
-.container3 .image-bg:hover img {
-    transform: scale(1.1);
-}
-
-.container3 .image-bg::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #604e3650;
-    z-index: 1;
-}
-
-.container3 .product-name {
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-}
-
-.container3 .product-name p {
-    position: relative;
-    font-family: "Jost", serif;
-    font-weight: 500;
-    font-size: 24px;
-    color: #fff;
-    z-index: 2;
-}
-
-.container3 .best-info {
-    position: absolute;
-    bottom: 10%;
-    right: 5%;
-}
-
-.container3 .best-info a {
-    position: relative;
-    color: #000;
-    background: #fff;
-    padding: 15px;
-    border: 2px solid #000;
-    border-radius: 250px;
-    box-shadow: 5px 5px 0px #000;
-    z-index: 3;
-    transition: all 0.3s ease;
-}
-
-.container3 .best-info a:hover {
-    background: #a8895d;
-    color: #51422c;
-    border: 2px solid #fff;
-    box-shadow: 5px 5px 0px #fff;
-}
-
-.container3 .best-info a:active {
-    background: #51422c;
-    color: #a8895d;
-    box-shadow: none;
-    transform: translateY(4px);
-}
-
-.container4 .image-bg {
-    position: relative;
-    overflow: hidden;
-    border-radius: 5px;
-}
-
-.container4 .image-bg img {
-    width: 300px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 5px;
-    transition: .7s;
-}
-
-.container4 .image-bg:hover img {
-    transform: scale(1.1);
-}
-
-.container4 .image-bg::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #604e3650;
-    z-index: 1;
-}
-
-.container4 .product-name {
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-}
-
-.container4 .product-name p {
-    position: relative;
-    font-family: "Jost", serif;
-    font-weight: 500;
-    font-size: 24px;
-    color: #fff;
-    z-index: 2;
-}
-
-.container4 .best-info {
-    position: absolute;
-    bottom: 10%;
-    right: 5%;
-}
-
-.container4 .best-info a {
-    position: relative;
-    color: #000;
-    background: #fff;
-    padding: 15px;
-    border: 2px solid #000;
-    border-radius: 250px;
-    box-shadow: 5px 5px 0px #000;
-    z-index: 3;
-    transition: all 0.3s ease;
-}
-
-.container4 .best-info a:hover {
-    background: #a8895d;
-    color: #51422c;
-    border: 2px solid #fff;
-    box-shadow: 5px 5px 0px #fff;
-}
-
-.container4 .best-info a:active {
+.bcontainer .best-info a:active {
     background: #51422c;
     color: #a8895d;
     box-shadow: none;
@@ -1116,48 +893,34 @@ nav {
   animation: animate 3s linear infinite;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1080px) {
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Luckiest Guy", "Cabin Sketch" Arial, Helvetica, sans-serif;
-    }
-    
-    html {
-        scroll-behavior: smooth;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
     body {
-        width: 100%;
-        height: 100vh;
+        min-width: 100%;
+        min-height: 100vh;
         background-image: url(mainbg.jpg);
         background-position: center;
+        background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;
     }
     
     nav {
         background: #fff;
-        width: 100%;
+        min-width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: baseline;
-        padding-bottom: 10px;
-        position: sticky;
+        position: fixed;
         z-index: 1;
     }
     
     .logo {
         color: #fff;
         font-family: "Luckiest Guy", sans-serif;
-        font-size: 36px;
+        font-size: 20px;
         font-weight: bold;
-        -webkit-text-stroke: 2px #000;
+        -webkit-text-stroke: 1px #000;
     }
     
     .navigation a {
@@ -1184,14 +947,14 @@ nav {
     }
     
     .navigation a:hover::before {
-        width: 100vw;
+        width: 100%;
     }
     
     .shop a {
         text-decoration: none;
         vertical-align: baseline;
         color: #000;
-        font-size: 18px;
+        font-size: 12px;
         margin: 0px 40px 0px 0px;
         position: relative;
     }
@@ -1210,16 +973,18 @@ nav {
     }
     
     .shop a:hover::before {
-        width: 100vw;
+        width: 100%;
     }
     
     .container {
-        width: 100vw;
-        max-width: 100%;
-        height: 100vh;
+        min-width: 100%;
+        height: 50vh;
         display: flex;
         align-items: center;
+        padding-left: 50px;
         background: #000000AA;
+        background-position: center;
+        background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -1231,17 +996,17 @@ nav {
     
     .container .content .title {
         font-family: "Luckiest Guy", sans-serif;
-        letter-spacing: 5px;
-        font-size: 5rem;
-        width: fit-content;
+        letter-spacing: 2px;
+        font-size: 3rem;
+        max-width: fit-content;
         color: #fff;
         -webkit-text-stroke: 2px #000;
     }
     
     .container .content .desc {
         font-family: "Jost", sans-serif;
-        width: 100vw;
-        font-size: 1.2rem;
+        max-width: 100%;
+        font-size: 1rem;
         margin: 38px 0px;
         letter-spacing: 1.5px;
         color: #fff;
@@ -1249,10 +1014,10 @@ nav {
     
     .container .content .btn-1 {
         display: inline-block;
-        padding: 10px 20px;
+        padding: 5px 10px;
         margin-right: 16px ;
         font-family: "Jost";
-        font-size: 24px;
+        font-size: 16px;
         font-weight: bold;
         text-align: center;
         text-decoration: none;
@@ -1277,10 +1042,435 @@ nav {
         box-shadow: none;
         transform: translateY(4px);
     }
-
-
-    .gallery-container .popup-image {
-        width: 95%;
+    
+    .coffee-container {
+        width: 100%;
+        height: 50vh;
+        background: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .coffee-container .coffee {
+        padding: 0px 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        animation: scroll linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 50%;
+    }
+    
+    .coffee-container .coffee .coffee-content {
+        width: 45%;
+        padding-right: 2%;
+    }
+    
+    .coffee-container .coffee .coffee-content .mini-title {
+        font-size: 8px;
+        font-family: "Jost";
+        font-weight: 600;
+        color: #c8935f;
+        margin-bottom: 5%;
+    }
+    
+    .coffee-container .coffee .coffee-content h1 {
+        font-size: 20px;
+        font-family: "Luckiest Guy", serif;
+        text-transform: uppercase;
+        color: transparent;
+        -webkit-text-stroke: 1px #000;
+        letter-spacing: 2px;
+        font-weight: 700;
+        margin-bottom: 5%;
+    }
+    
+    .coffee-container .coffee .coffee-content .mini-description {
+        font-size: 8px;
+        font-family: "Jost";
+        margin-bottom: 5%;
+    }
+    
+    .coffee-flavor {
+        padding-bottom: 5%;
+    }
+    
+    .coffee-container .coffee .coffee-content .coffee-flavor button {
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 5px;
+        font-size: 8px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        background: #fff;
+        border: 2px solid #000;
+        border-radius: 10px;
+        box-shadow: 5px 5px 0px #000;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .coffee-container .coffee .coffee-content .coffee-flavor button:hover {
+        background: #a8895d;
+        color: #51422c;
+        border: 2px solid #fff;
+        box-shadow: 5px 5px 0px #fff;
+    }
+    
+    .coffee-container .coffee .coffee-content .coffee-flavor button:active {
+        background: #51422c;
+        color: #a8895d;
+        box-shadow: none;
+        transform: translateY(4px);
+    }
+    
+    .coffee-container .coffee .coffee-content .coffee-flavor #txt1-color {
+        color: #c8935f;
+    }
+    
+    .coffee-container .coffee .coffee-content a {
+        text-decoration: none;
+        color: #000;
+        font-size: 12px;
+        font-family: "Jost";
+    }
+    
+    .coffee-container .coffee .coffee-img {
+        margin: 0px 5%;
+        height: 150px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 0px #000;
+    }
+    
+    .coffee-container .coffee .coffee-img img {
+        min-width: 250px;
+        min-height: 150px;
+        max-width: 250px;
+        max-height: 150px;
+        object-position: center;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    .pastry-container {
+        width: 100%;
+        height: 50vh;
+        background: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .pastry-container .pastry {
+        padding: 0px 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        animation: scroll linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 50%;
+    }
+    
+    .pastry-container .pastry .pastry-img img {
+        min-width: 250px;
+        min-height: 150px;
+        max-width: 250px;
+        max-height: 150px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    .pastry-container .pastry .pastry-img {
+        margin: 0px 2%;
+        height: 150px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 0px #000;
+    }
+    
+    .pastry-container .pastry .pastry-content {
+        width: 75%;
+        padding-left: 5%;
+    }
+    
+    .pastry-container .pastry .pastry-content .mini-title {
+        font-size: 12px;
+        font-family: "Jost";
+        font-weight: 600;
+        color: #c8935f;
+        margin-bottom: 5%;
+    }
+    
+    .pastry-container .pastry .pastry-content h1 {
+        font-size: 22px;
+        text-transform: uppercase;
+        font-family: "Luckiest Guy", serif;
+        color: transparent;
+        -webkit-text-stroke: 1px #000;
+        letter-spacing: 5px;
+        font-weight: bolder;
+        margin-bottom: 5%;
+    }
+    
+    .pastry-container .pastry .pastry-content .mini-description {
+        font-size: 8px;
+        font-family: "Jost";
+        margin-bottom: 5%;
+    }
+    
+    .pastry-flavor {
+        padding-bottom: 5%;
+    }
+    
+    .pastry-container .pastry .pastry-content .pastry-flavor button {
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 5px;
+        font-size: 8px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        background: #fff;
+        border: 2px solid #000;
+        border-radius: 10px;
+        box-shadow: 5px 5px 0px #000;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .pastry-container .pastry .pastry-content .pastry-flavor #pastry-col1 {
+        color: #c8935f;
+    }
+    
+    .pastry-container .pastry .pastry-content .pastry-flavor button:hover {
+        background: #a8895d;
+        color: #51422c;
+        border: 2px solid #fff;
+        box-shadow: 5px 5px 0px #fff;
+    }
+    
+    .pastry-container .pastry .pastry-content .pastry-flavor button:active {
+        background: #51422c;
+        color: #a8895d;
+        box-shadow: none;
+        transform: translateY(4px);
+    }
+    
+    .pastry-container .pastry .pastry-content a {
+        text-decoration: none;
+        color: #000;
+        font-size: 12px;
+        font-family: "Jost";
+    }
+    
+    .meals-container {
+        width: 100%;
+        height: 50vh;
+        background: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .meals-container .meals {
+        padding: 0px 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        animation: scroll linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 50%;
+    }
+    
+    .meals-container .meals .meals-content {
+        width: 45%;
+        padding-right: 2%;
+    }
+    
+    .meals-container .meals .meals-content .meals-title {
+        font-size: 8px;
+        font-family: "Jost";
+        font-weight: 600;
+        color: #c8935f;
+        margin-bottom: 5%;
+    }
+    
+    .meals-container .meals .meals-content h1 {
+        font-size: 20px;
+        font-family: "Luckiest Guy", serif;
+        text-transform: uppercase;
+        color: transparent;
+        -webkit-text-stroke: 1px #000;
+        letter-spacing: 2px;
+        font-weight: 700;
+        margin-bottom: 5%;
+    }
+    
+    .meals-container .meals .meals-content .meals-description {
+        font-size: 8px;
+        font-family: "Jost";
+        margin-bottom: 5%;
+    }
+    
+    .meals-flavor {
+        padding-bottom: 5%;
+    }
+    
+    .meals-container .meals .meals-content .meals-flavor button {
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 5px;
+        font-size: 8px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        background: #fff;
+        border: 2px solid #000;
+        border-radius: 10px;
+        box-shadow: 5px 5px 0px #000;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .meals-container .meals .meals-content .meals-flavor button:hover {
+        background: #a8895d;
+        color: #51422c;
+        border: 2px solid #fff;
+        box-shadow: 5px 5px 0px #fff;
+    }
+    
+    .meals-container .meals .meals-content .meals-flavor button:active {
+        background: #51422c;
+        color: #a8895d;
+        box-shadow: none;
+        transform: translateY(4px);
+    }
+    
+    .meals-container .meals .meals-content .meals-flavor #meal1-color {
+        color: #c8935f;
+    }
+    
+    .meals-container .meals .meals-content a {
+        text-decoration: none;
+        color: #000;
+        font-size: 12px;
+        font-family: "Jost";
+    }
+    
+    .meals-container .meals .meals-img img {
+        min-width: 250px;
+        min-height: 150px;
+        max-width: 250px;
+        max-height: 150px;
+        object-position: center;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    .meals-container .meals .meals-img {
+        margin: 0px 5%;
+        height: 150px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 0px #000;
     }
 
-}
+    .best-container .bs-container h1 {
+        font-size: 24px;
+    }
+
+    .best-container .bs-container a {
+        font-size: 12px;
+    }
+
+    .bcontainer {
+        padding-bottom: 5%;
+    }
+
+    .bcontainer .image-bg {
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+    
+    .bcontainer .image-bg img {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 5px;
+        transition: .7s;
+    }
+
+    .bcontainer .best-info a {
+        position: relative;
+        color: #000;
+        background: #fff;
+        padding: 8px;
+        border: 2px solid #000;
+        border-radius: 250px;
+        box-shadow: 5px 5px 0px #000;
+        z-index: 3;
+        transition: all 0.3s ease;
+    }
+
+    .bcontainer .product-name {
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+    }
+
+    .bcontainer .product-name p {
+        position: relative;
+        font-size: 16px;
+        font-family: "Jost", serif;
+        font-weight: 500;
+        color: #fff;
+        z-index: 2;
+    }
+
+    .gallery-container .popup-image img {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 5px solid #fff;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+    
+    
+    .gallery-container .popup-image .button-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+    }
+    
+    .gallery-container .popup-image .button-container button{
+        padding: 10px 20px;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        background: #fff;
+        border: 2px solid #000;
+        border-radius: 10px;
+        box-shadow: 5px 5px 0px #000;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+}   
