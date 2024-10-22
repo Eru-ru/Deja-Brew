@@ -896,8 +896,8 @@ nav {
 @media only screen and (max-width: 1080px) {
 
     body {
-        width: 100%;
-        height: 100vh;
+        min-width: 100%;
+        min-height: 100vh;
         background-image: url(mainbg.jpg);
         background-position: center;
         background-attachment: fixed;
@@ -907,7 +907,7 @@ nav {
     
     nav {
         background: #fff;
-        width: 100%;
+        min-width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: baseline;
@@ -918,7 +918,7 @@ nav {
     .logo {
         color: #fff;
         font-family: "Luckiest Guy", sans-serif;
-        font-size: 20px;
+        font-size: 3vw;
         font-weight: bold;
         -webkit-text-stroke: 1px #000;
     }
@@ -928,8 +928,8 @@ nav {
         text-decoration: none;
         vertical-align: baseline;
         color: #000;
-        font-size: 12px;
-        margin: 0px 40px 0px 0px;
+        font-size: 1.5vw;
+        margin: 0px 20px 0px 0px;
         position: relative;
     }
     
@@ -954,8 +954,8 @@ nav {
         text-decoration: none;
         vertical-align: baseline;
         color: #000;
-        font-size: 12px;
-        margin: 0px 40px 0px 0px;
+        font-size: 1.5vw;
+        margin: 0px 20px 0px 0px;
         position: relative;
     }
     
@@ -975,39 +975,38 @@ nav {
     .shop a:hover::before {
         width: 100%;
     }
-    
+  
     .container {
-        min-width: 100%;
-        height: 50vh;
-        display: flex;
-        align-items: center;
-        padding-left: 50px;
-        background: #000000AA;
-        background-position: center;
-        background-attachment: fixed;
-        background-size: cover;
-        background-repeat: no-repeat;
+      min-width: 100%;
+      height: 75vh;
+      display: flex;
+      align-items: center;
+      background: #000000AA;
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
-    
+  
     .container .content {
         width: fit-content;
         padding: 20px;
     }
-    
+  
     .container .content .title {
         font-family: "Luckiest Guy", sans-serif;
         letter-spacing: 2px;
-        font-size: 3rem;
+        font-size: 10vw;
         max-width: fit-content;
         color: #fff;
-        -webkit-text-stroke: 2px #000;
+        -webkit-text-stroke: 1px #000;
     }
-    
+  
     .container .content .desc {
         font-family: "Jost", sans-serif;
         max-width: 100%;
-        font-size: 1rem;
-        margin: 20px 0px;
+        font-size: 2.5vw;
+        margin: 10px 0px;
         letter-spacing: 1.5px;
         color: #fff;
     }
@@ -1015,9 +1014,9 @@ nav {
     .container .content .btn-1 {
         display: inline-block;
         padding: 5px 10px;
-        margin-right: 16px ;
+        margin-right: 12px ;
         font-family: "Jost";
-        font-size: 12px;
+        font-size: 2.4vw;
         font-weight: bold;
         text-align: center;
         text-decoration: none;
@@ -1070,7 +1069,7 @@ nav {
     }
     
     .coffee-container .coffee .coffee-content .mini-title {
-        font-size: 8px;
+        font-size: 2.4vw;
         font-family: "Jost";
         font-weight: 600;
         color: #c8935f;
@@ -1078,7 +1077,7 @@ nav {
     }
     
     .coffee-container .coffee .coffee-content h1 {
-        font-size: 20px;
+        font-size: 4vw;
         font-family: "Luckiest Guy", serif;
         text-transform: uppercase;
         color: transparent;
@@ -1089,7 +1088,7 @@ nav {
     }
     
     .coffee-container .coffee .coffee-content .mini-description {
-        font-size: 8px;
+        font-size: 1.5vw;
         font-family: "Jost";
         margin-bottom: 5%;
     }
@@ -1102,7 +1101,7 @@ nav {
         display: inline-block;
         padding: 5px 10px;
         margin: 5px;
-        font-size: 8px;
+        font-size: 1.5vw;
         font-weight: bold;
         text-align: center;
         text-decoration: none;
@@ -1136,22 +1135,22 @@ nav {
     .coffee-container .coffee .coffee-content a {
         text-decoration: none;
         color: #000;
-        font-size: 12px;
+        font-size: 2.4vw;
         font-family: "Jost";
     }
     
     .coffee-container .coffee .coffee-img {
         margin: 0px 5%;
-        height: 150px;
+        height: 100px;
         border-radius: 10px;
         box-shadow: 10px 10px 0px #000;
     }
     
     .coffee-container .coffee .coffee-img img {
-        min-width: 250px;
-        min-height: 150px;
-        max-width: 250px;
-        max-height: 150px;
+        min-width: 150px;
+        min-height: 100px;
+        max-width: 150px;
+        max-height: 100px;
         object-position: center;
         object-fit: cover;
         border-radius: 5px;
@@ -1179,28 +1178,28 @@ nav {
     }
     
     .pastry-container .pastry .pastry-img img {
-        min-width: 250px;
-        min-height: 150px;
-        max-width: 250px;
-        max-height: 150px;
+        min-width: 150px;
+        min-height: 100px;
+        max-width: 150px;
+        max-height: 100px;
         object-fit: cover;
         border-radius: 5px;
     }
     
     .pastry-container .pastry .pastry-img {
         margin: 0px 2%;
-        height: 150px;
+        height: 100px;
         border-radius: 10px;
         box-shadow: 10px 10px 0px #000;
     }
     
     .pastry-container .pastry .pastry-content {
-        width: 75%;
+        width: 100%;
         padding-left: 5%;
     }
     
     .pastry-container .pastry .pastry-content .mini-title {
-        font-size: 12px;
+        font-size: 2.4vw;
         font-family: "Jost";
         font-weight: 600;
         color: #c8935f;
@@ -1208,7 +1207,7 @@ nav {
     }
     
     .pastry-container .pastry .pastry-content h1 {
-        font-size: 22px;
+        font-size: 4vw;
         text-transform: uppercase;
         font-family: "Luckiest Guy", serif;
         color: transparent;
@@ -1219,7 +1218,7 @@ nav {
     }
     
     .pastry-container .pastry .pastry-content .mini-description {
-        font-size: 8px;
+        font-size: 1.5vw;
         font-family: "Jost";
         margin-bottom: 5%;
     }
@@ -1232,7 +1231,7 @@ nav {
         display: inline-block;
         padding: 5px 10px;
         margin: 5px;
-        font-size: 8px;
+        font-size: 1.5vw;
         font-weight: bold;
         text-align: center;
         text-decoration: none;
@@ -1266,7 +1265,7 @@ nav {
     .pastry-container .pastry .pastry-content a {
         text-decoration: none;
         color: #000;
-        font-size: 12px;
+        font-size: 2.4vw;
         font-family: "Jost";
     }
     
@@ -1297,7 +1296,7 @@ nav {
     }
     
     .meals-container .meals .meals-content .meals-title {
-        font-size: 8px;
+        font-size: 2.4vw;
         font-family: "Jost";
         font-weight: 600;
         color: #c8935f;
@@ -1305,7 +1304,7 @@ nav {
     }
     
     .meals-container .meals .meals-content h1 {
-        font-size: 20px;
+        font-size: 4vw;
         font-family: "Luckiest Guy", serif;
         text-transform: uppercase;
         color: transparent;
@@ -1316,7 +1315,7 @@ nav {
     }
     
     .meals-container .meals .meals-content .meals-description {
-        font-size: 8px;
+        font-size: 1.5vw;
         font-family: "Jost";
         margin-bottom: 5%;
     }
@@ -1329,7 +1328,7 @@ nav {
         display: inline-block;
         padding: 5px 10px;
         margin: 5px;
-        font-size: 8px;
+        font-size: 1.5vw;
         font-weight: bold;
         text-align: center;
         text-decoration: none;
@@ -1363,7 +1362,7 @@ nav {
     .meals-container .meals .meals-content a {
         text-decoration: none;
         color: #000;
-        font-size: 12px;
+        font-size: 2.4vw;
         font-family: "Jost";
     }
     
@@ -1403,8 +1402,8 @@ nav {
     }
     
     .bcontainer .image-bg img {
-        width: 200px;
-        height: 300px;
+        width: 150px;
+        height: 250px;
         object-fit: cover;
         border-radius: 5px;
         transition: .7s;
@@ -1414,7 +1413,8 @@ nav {
         position: relative;
         color: #000;
         background: #fff;
-        padding: 8px;
+        padding: 6px;
+        font-size: 2.4vw;
         border: 2px solid #000;
         border-radius: 250px;
         box-shadow: 5px 5px 0px #000;
@@ -1430,11 +1430,34 @@ nav {
 
     .bcontainer .product-name p {
         position: relative;
-        font-size: 16px;
+        font-size: 2.4vw;
         font-family: "Jost", serif;
         font-weight: 500;
         color: #fff;
         z-index: 2;
+    }
+
+    .gallery-container .h1-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .gallery-container .h1-container h1 {
+        width: fit-content;
+        padding: 5px 25px;
+        margin: 5px;
+        font-family: "Luckiest Guy", serif;
+        -webkit-text-stroke: 1px #000;
+        color: #fff;
+        font-size: 8vw;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        background: #fff;
+        border: 2px solid #000;
+        border-radius: 10px;
+        box-shadow: 5px 5px 0px #000;
     }
 
     .gallery-container .popup-image img {
@@ -1456,7 +1479,7 @@ nav {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 40px;
+        padding: 45px;
     }
     
     .gallery-container .popup-image .button-container button{

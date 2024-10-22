@@ -331,7 +331,7 @@ nav {
   .logo {
       color: #fff;
       font-family: "Luckiest Guy", sans-serif;
-      font-size: 20px;
+      font-size: 3vw;
       font-weight: bold;
       -webkit-text-stroke: 1px #000;
   }
@@ -341,8 +341,8 @@ nav {
       text-decoration: none;
       vertical-align: baseline;
       color: #000;
-      font-size: 12px;
-      margin: 0px 40px 0px 0px;
+      font-size: 1.5vw;
+      margin: 0px 20px 0px 0px;
       position: relative;
   }
   
@@ -367,8 +367,8 @@ nav {
       text-decoration: none;
       vertical-align: baseline;
       color: #000;
-      font-size: 12px;
-      margin: 0px 40px 0px 0px;
+      font-size: 1.5vw;
+      margin: 0px 20px 0px 0px;
       position: relative;
   }
   
@@ -409,7 +409,7 @@ nav {
   .container .content .title {
       font-family: "Luckiest Guy", sans-serif;
       letter-spacing: 2px;
-      font-size: 3rem;
+      font-size: 10vw;
       max-width: fit-content;
       color: #fff;
       -webkit-text-stroke: 1px #000;
@@ -418,7 +418,7 @@ nav {
   .container .content .desc {
       font-family: "Jost", sans-serif;
       max-width: 100%;
-      font-size: 0.75rem;
+      font-size: 2.5vw;
       margin: 10px 0px;
       letter-spacing: 1.5px;
       color: #fff;
