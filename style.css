@@ -1402,8 +1402,8 @@ nav {
     }
     
     .bcontainer .image-bg img {
-        width: 100px;
-        height: 200px;
+        width: 150px;
+        height: 250px;
         object-fit: cover;
         border-radius: 5px;
         transition: .7s;
@@ -1441,6 +1441,7 @@ nav {
         width: 100%;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     
     .gallery-container .h1-container h1 {
@@ -1462,8 +1463,8 @@ nav {
 
     .gallery-container .popup-image img {
         position: absolute;
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -1479,12 +1480,12 @@ nav {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 45px;
+        padding: 25px;
     }
     
     .gallery-container .popup-image .button-container button{
-        padding: 0px 10px;
-        font-size: 24px;
+        padding: 10px 10px;
+        font-size: 8px;
         font-weight: bold;
         text-align: center;
         text-decoration: none;
