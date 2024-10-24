@@ -755,7 +755,7 @@ nav {
     }
     
     .order-now .choose-order h1 {
-        font-size: 2rem;
+        font-size: 6vw;
         font-family: "Luckiest Guy", serif;
         padding-top: 20px;
         color: #fff;
@@ -778,13 +778,18 @@ nav {
     
     .order_menu .products {
         width: fit-content;
+        padding-bottom: 50px;
     }
-    
+
+    .order_menu .products [type="checkbox"] {
+        font-family: "Jost", serif;
+        height: 8px;
+    }
     .order_menu .products [type="checkbox"] + label {
         font-size: 2.4vw;
         font-family: "Jost", serif;
         height: 8px;
-        padding-left: 10px;
+        padding: 0px 0px 0px 1px;
     }
     
     .order_menu .quantity ul {
@@ -796,6 +801,7 @@ nav {
     
     .order_menu .quantity input {
         width: 25px;
+        margin: 2.05px 0px;
         text-align: center;
         font-family: "Jost", serif;
         font-size: 2.4vw;
@@ -807,6 +813,7 @@ nav {
         font-size: 2.4vw;
         font-family: "Jost", serif;
         padding-left: 10px;
+        padding-bottom: 7.5px;
     }
     
     .order_menu #milk [type="checkbox"] + label {
@@ -831,7 +838,7 @@ nav {
         font-size: 2.4vw;
         font-family: "Jost", serif;
         padding-bottom: 2.2px;
-        padding-left: 10px;
+        padding: 7.25px 0px 0px 10px
     }
     
     .submit-order {
